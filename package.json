@@ -1,5 +1,5 @@
 {
-  "name": "@wcd/goaround.tooltip",
+  "name": "@traveldealz/tooltip",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -15,6 +15,6 @@
     "placement.js": "latest"
   },
   "publishConfig": {
-		"registry": "https://npm.pkg.github.com/"
-	}
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
