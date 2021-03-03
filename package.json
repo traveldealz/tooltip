@@ -4,7 +4,7 @@
   "description": "",
   "license": "ISC",
   "type": "module",
-  "homepage": "{{ homepage }}",
+  "main": "index.js",
   "scripts": {
     "serve": "wcd-cli serve M0WlkdolZbNk5N4BURsC --open"
   },
@@ -13,5 +13,8 @@
   },
   "dependencies": {
     "placement.js": "latest"
-  }
+  },
+  "publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	}
 }
