@@ -1,0 +1,17 @@
+{
+  "name": "@wcd/goaround.tooltip",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "type": "module",
+  "homepage": "{{ homepage }}",
+  "scripts": {
+    "serve": "wcd-cli serve M0WlkdolZbNk5N4BURsC --open"
+  },
+  "devDependencies": {
+    "wcd-cli": "latest"
+  },
+  "dependencies": {
+    "placement.js": "latest"
+  }
+}
