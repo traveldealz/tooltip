@@ -1,10 +1,10 @@
 {
-  "name": "@traveldealz/tooltip",
+  "name": "@wcd/goaround.tooltip",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
   "type": "module",
-  "main": "index.js",
+  "homepage": "{{ homepage }}",
   "scripts": {
     "serve": "wcd-cli serve M0WlkdolZbNk5N4BURsC --open"
   },
@@ -13,8 +13,5 @@
   },
   "dependencies": {
     "placement.js": "latest"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   }
 }
