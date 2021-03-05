@@ -8,14 +8,16 @@ template.innerHTML = /*html*/`
       background-color: black;
       color: #fff;
       font-size: .8rem;
-      max-width: 320px;
       padding: 5px 20px;
       border-radius: 6px;
       margin: .5rem;
       word-break: break-word;
     }
+    p {
+      max-width: 320px;
+    }
   </style>
-  <slot></slot>`;
+  <p><slot></slot></p>`;
 
 export default class Tooltip extends HTMLElement {
   constructor() {
