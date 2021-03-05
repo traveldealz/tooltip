@@ -16,10 +16,11 @@ jobs:
         scope: '@traveldealz'
     - name: Change name in package.json
       run: sed -i 's/wcd\/goaround\./traveldealz\//g' package.json
+    - run: echo "${{ github.event.release.tag_name }}"
     - name: Change version in package.json
       env:
         RELEASE_TAG: ${{ github.event.release.tag_name }}
-      run: npm --no-git-tag-version version "$RELEASE_TAG"
+      run: npm --no-git-tag-version version "${{ github.event.release.tag_name }}"
     - name: Publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
