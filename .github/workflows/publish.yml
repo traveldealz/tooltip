@@ -19,7 +19,7 @@ jobs:
     - name: Change version in package.json
       env:
         RELEASE_TAG: ${{ github.event.release.tag_name }}
-      run: sed -i 's/"version":"" "1.0.0"/"version":"" "$RELEASE_TAG"/g' package.json
+      run: npm --no-git-tag-version version $RELEASE_TAG
     - name: Publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
