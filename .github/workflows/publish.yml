@@ -17,10 +17,10 @@ jobs:
     - name: Change name in package.json
       run: sed -i 's/wcd\/goaround\./traveldealz\//g' package.json
     - name: Change version in package.json
-      run: sed -i 's/"version": "1.0.0"/"version": "$GITHUB_CONTEXT"/g' package.json
+      run: sed -i 's/"version"":" "1.0.0"/"version"":" "$GITHUB_CONTEXT"/g' package.json
       env:
         RELEASE_TAG: ${{ github.event.release.tag_name }}
-    - Publish
-      run: npm publish
+    - name: Publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: npm publish
