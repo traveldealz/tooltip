@@ -1,4 +1,4 @@
-import { place } from 'placement.js';
+import placement from 'placement.js';
 
 const template = document.createElement("template");
 template.innerHTML = /*html*/`
@@ -78,7 +78,7 @@ export default class Tooltip extends HTMLElement {
 
   _show() {
     this.hidden = false;
-    place(this.$target, this, { placement: this.$placement } );
+    placement(this.$target, this, { placement: this.$placement } );
   }
 
   _hide() {
